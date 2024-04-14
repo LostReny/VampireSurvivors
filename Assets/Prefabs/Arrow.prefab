@@ -134,5 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29bcf20f2e2918049b976458495cffe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 7944273292120377655, guid: 8ad9e155748436d4e9a885750f6a18fd, type: 3}
   arrowRb: {fileID: 3576612710894825913}
   arrowSp: 20

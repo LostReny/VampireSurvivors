@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float speed;
+    public Rigidbody2D rb;
+
+    private Vector2 dir;
+
+    private void Update()
     {
-        
+        dir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void FixedUpdate()
+    {   
+        // mover o persongagem sem problemas
+        rb.MovePosition(rb.position + dir.normalized * speed * Time.deltaTime);
     }
 }
